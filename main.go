@@ -179,7 +179,7 @@ func main() {
 }
 
 func QrCode(inpt string) {
-
+    os.MkdirAll("./Qr", os.ModePerm)
 	prompt := promptui.Select{
 		Label: "Select Qr Style",
 		Items: []string{"Square", "Circle"},
